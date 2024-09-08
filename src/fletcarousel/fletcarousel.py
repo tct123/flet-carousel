@@ -4,7 +4,6 @@ from flet import (
     ClipBehavior,
     Border,
     Control,
-    UserControl,
     Page,
     Alignment,
     Container
@@ -50,7 +49,7 @@ class FletCarousel(Container):
         self.gradient = gradient
         self.border = border
         self.border_radius = border_radius
-        self.clip_behavior = ClipBehavior.HARD_EDGE,
+        self.clip_behavior = (ClipBehavior.HARD_EDGE,)
 
     def build(self):
         self.content = self.render()
